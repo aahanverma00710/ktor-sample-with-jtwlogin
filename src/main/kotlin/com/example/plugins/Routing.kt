@@ -2,6 +2,7 @@ package com.example.plugins
 
 import com.example.plugins.v1.unauth.userLogin
 import com.example.plugins.v1.unauth.userSignUp
+import com.example.plugins.v1.upload.fileUpload
 import com.example.plugins.v1.user.userInfo
 import io.ktor.server.routing.*
 import io.ktor.http.*
@@ -16,5 +17,6 @@ fun Application.configureRouting() {
         userLogin()
         userSignUp()
         userInfo()
+        fileUpload()
     }
 }
